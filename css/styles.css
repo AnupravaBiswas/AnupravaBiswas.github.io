@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.1px;
+}
+
+body,
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #2e2e2e, #2b2b2b, #292929, #262626, #242424, #212121, #1f1f1f, #1c1c1c, #181818, #151515, #101010, #0b0b0b);
+    font-family: "Varela Round", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-toggle {
+    border-radius: 50%;
+
+
+    width: 40px;
+    height: 40px;
+    background: rgba(238, 236, 238, 0);
+    position: absolute;
+    top: 3vh;
+    right: 05vh;
+    z-index: -1;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.menu-toggle span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    background: #eeeded;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 30%;
+
+
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 70%;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: -100%;
+    height: 50px;
+    transition: .5s;
+}
+
+nav.active {
+    right: 160px;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 10vh;
+    list-style: none;
+    margin-left: 25%;
+
+}
+
+.menu li {
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+}
+
+.menu li a {
+    font-size: 15px;
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+    transition: all 0.45s;
+}
+
+.menu li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+}
+
+.menu li:hover a {
+    color: #d81d1d;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 30px;
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+
+
+
+/** home page**/
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url(fonts/nakki_ldr.ttf) format('truetype');
+}
+
+
+.no {
+    font-size: 5rem;
+
+    right: 30%;
+    font-stretch: 40%;
+
+    top: 50%;
+    position: fixed;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(../assests/bg.jpg) center/cover no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: hue-rotate();
+    font-weight: 1100;
+}
+
+.design {
+    position: fixed;
+    color: white;
+    margin-top: 18%;
+    right: 30%;
+    font-weight: 1000px;
+    font-size: 300%;
+}
+
+.signature {
+    left: 2%;
+    top: -2%;
+    position: fixed;
+
+}
+
+.circle {
+    top: 30%;
+    position: fixed;
+    left: 15%;
+
+}
+
+
+
+canvas {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.A {
+
+    position: absolute;
+    background: transparent;
+    box-shadow: none;
+    top: 25%;
+    left: 47%;
+    font-family: "myFirstFont";
+    filter:
+        blur(1px);
+    text-shadow:
+
+        0 0 10px rgb(248, 35, 35);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    border: 1px solid rgb(250, 5, 5);
+    background: none;
+    padding: 2px 40px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    right: 2%;
+    margin-top: 85vh;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    color: white;
+
+}

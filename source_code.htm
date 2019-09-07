@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/source.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div>
+                <svg height="100" width="50">
+                    <circle cx="20" cy="20" r="18" stroke="black" stroke-width="1" fill="transparent" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.htm">ABOUT</a></li>
+                <li><a href="gallery.htm">GALLERY</a></li>
+                <li><a href="source_code.htm">SOURCE_CODE</a></li>
+                <li><a href="#!">BLOG</a></li>
+                <li><a href="contact.htm">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+
+        <a href="index.html"><svg class="A" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="1.361in" height="0.75in">
+                <image x="0px" y="0px" width="58px" height="64px"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAA2BAMAAADOlFHcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAAD////l5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eHl5eH///8WYyZwAAAADnRSTlMAACBAMPBwYFCg0BDAsPsy2d0AAAABYktHRAH/Ai3eAAAAB3RJTUUH4wgVFDESJXhStgAAAY9JREFUSMft1bFOAzEMBuAIkCpUFr8BEi+AOMQAC6jiDRiYWNgRG1s39j5BF0akqoiNiSfgEdgAXVXyDATnLs7ZPl8mJjJU517+fmrsa50Ta6OitSvuggy4c0/roiSxdZUlPk4LEjmhIGATCgIDhERggJAIDBECAZX4bLpxoyCgErdNNVIQ0IivVE8lAhahImASGgImoSFgEwqCiXa874nYDOU+IZc0/CC6Fol5uKoJyboJjg8GEtt4OSOERgb6iR4EDEJHwCB0BCxCRc4souebTOJJH4fiocJOjVNZVUvsbCrDOmxbuRPee6XO9pfw14lsBkfdGZ72JLp7WF5PdDYxghKTeGCY8Nd4gHjnDl+xPvJtAje/eb9mAzxLH07dj08Vbm4See/rlKDuxye3k9AQTnQTGsIJlpCIIFhCIoLgCY5IgifcHv3HnoTymcoDpyeG139iVZxYNIlsvO3129OYqAsT85QoRHBs1u7dFyM4md/uxZcicTIf3XhRiiCxenLFSENA/CmP422vOPxL+AGDTkTo9Pcb9AAAAABJRU5ErkJggg==" />
+            </svg>
+        </a>
+
+    </header>
+
+
+
+    <div class="illustration">
+
+        code cooked fresh
+
+    </div>
+
+    <div class="wall">
+        <div class="w3-row-padding">
+            <div class="wall-item" id="1">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/alexandra-hodgson-byfinalblue.jpg" alt=""
+                        style="width:100%; cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+                </div>
+            </div>
+
+            <div class="wall-item" id="2">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/black-and-white-blur-costume-458509.jpg" alt=""
+                        style="width:100%; cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+                </div>
+            </div>
+            <div class="wall-item" id="3">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/1.jpg" alt="" style="width:100%; cursor:pointer"
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+
+                </div>
+            </div>
+            <div class="wall-item" id="4">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/hue-teo-environment1.jpg" alt="" style="width:100%; cursor:pointer"
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+
+                </div>
+            </div>
+            <div class="wall-item" id="5">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/wojtek-fus-sketchypaint.jpg" alt="" style="width:100%; cursor:pointer"
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+
+                </div>
+            </div>
+            <div class="wall-item" id="6">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/3.jpg" alt="" style="width:100%; cursor:pointer"
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+
+                </div>
+            </div>
+            <div class="wall-item" id="7">
+                <div class="w3-container w3-third">
+                    <img id="myImg" src="assests/6.jpg" alt="" style="width:100%; cursor:pointer"
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    <h2>content of blog</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem laboriosam aspernatur,
+                        impedit perferendi</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="javascripts/jaliswall.js"></script>
+    <script type="text/javascript">
+        $('.wall').jaliswall({
+
+            // item classname
+            item: '.wall-item',
+
+            // column classname
+            columnClass: '.wall-column'
+
+        });
+    </script>
+
+</body>
+
+</html>
