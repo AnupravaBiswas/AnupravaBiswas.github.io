@@ -1,4 +1,5 @@
 @import "../css/menu.css";
+@import "../css/mobite_sytle.css";
 
 body,
 html {
@@ -300,6 +301,16 @@ html {
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .about {
+        transform: rotate(-90deg);
+    }
+
+    .main {
+        top: 500px;
+        left: 150px;
+    }
+}
 
 
 #aboutMe {
