@@ -95,3 +95,22 @@ h6,
 .fa-codepen {
     color: white;
 }
+
+@media screen and (max-width: 950px) {
+    .A {
+        position: relative;
+        left: 35%;
+
+        top: -10%;
+    }
+
+    .svg1 {
+        visibility: hidden;
+    }
+
+    #social {
+        top: 60%;
+        right: 30%;
+
+    }
+}

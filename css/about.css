@@ -1,5 +1,5 @@
-@import "../css/menu.css";
-@import "../css/mobite_sytle.css";
+@import url("../css/menu.css");
+@import url("../css/mobite_sytle.css");
 
 body,
 html {
@@ -15,7 +15,15 @@ html {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 750px) {
 
+
+    nav :not(:active) {
+        right: -40px;
+    }
+
+
+}
 
 
 .hlfshape {
@@ -360,7 +368,7 @@ html {
 
 /** accordion style **/
 
-.accordian {
+.accord {
     max-width: 650px;
     top: -500px;
 
@@ -369,12 +377,12 @@ html {
     z-index: -10;
 }
 
-.accordian .card {
+.accord .card {
     margin-bottom: 30px;
     position: relative;
 }
 
-.accordian .card::before {
+.accord .card::before {
     content: '';
     position: absolute;
     left: 15px;
@@ -386,13 +394,13 @@ html {
 
 
 
-.accordian .card-header {
+.accord .card-header {
     position: relative;
     padding-left: 45px;
     cursor: pointer;
 }
 
-.accordian .card-header h3 {
+.accord .card-header h3 {
     margin: 0;
     font-size: 20px;
     color: #fff6da;
@@ -411,20 +419,20 @@ html {
 
 
 
-.accordian .card-body {
+.accord .card-body {
     padding-left: 45px;
 }
 
-.accordian .card .card-body {
+.accord .card .card-body {
     display: none;
 }
 
 /*open one card by default*/
-.accordian .card:nth-child(1) .card-body {
+.accord .card:nth-child(1) .card-body {
     display: block;
 }
 
-.accordian .card-body p {
+.accord .card-body p {
     color: #7c7676;
     font-size: 15px;
     line-height: 24px;

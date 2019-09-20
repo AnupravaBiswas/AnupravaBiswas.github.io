@@ -19,6 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .menu-toggle {
@@ -85,7 +86,7 @@ nav {
 }
 
 nav.active {
-    right: 140px;
+    right: 120px;
 }
 
 .menu {
