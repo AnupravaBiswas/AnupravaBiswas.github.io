@@ -109,8 +109,8 @@ canvas {
     top: 25%;
     left: 47%;
     font-family: "myFirstFont";
-    filter:
-        blur(1px);
+
+
     text-shadow:
 
         0 0 10px rgb(248, 35, 35);
@@ -136,7 +136,7 @@ canvas {
 
 
 
-.btn {
+.btn1 {
     border: 1px solid rgb(250, 5, 5);
     background: none;
     padding: 2px 40px;

@@ -93,9 +93,11 @@
         margin: -5px;
     }
 
-    .btn {
+    .btn,
+    .btn1 {
         visibility: hidden;
     }
+
 
     .design {
         left: 35px;

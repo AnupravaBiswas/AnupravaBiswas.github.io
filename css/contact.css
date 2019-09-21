@@ -15,10 +15,10 @@ html {
 
 
 .A {
-    position: relative;
-    left: 10%;
+    position: fixed;
 
-    top: -10%;
+    margin-top: 15%;
+    margin-left: 46%
 }
 
 .svg1 {
@@ -33,12 +33,29 @@ html {
 h5,
 h6,
 .nw {
-    top: -5%;
-    position: relative;
-    margin-top: -.5%;
+    top: 50%;
+    position: fixed;
+    left: 40%;
     color: goldenrod;
 }
 
+#copy {
+    top: 45%;
+    padding-bottom: 4%;
+    color: goldenrod;
+    position: fixed;
+    left: 47%;
+}
+
+h6 {
+    padding-top: 3%;
+    left: 47%;
+}
+
+.nw {
+    top: 65%;
+    left: 47%;
+}
 
 #social {
     top: 80%;
@@ -96,21 +113,34 @@ h6,
     color: white;
 }
 
-@media screen and (max-width: 950px) {
-    .A {
-        position: relative;
-        left: 35%;
+@media screen and (max-width: 750px) {
 
-        top: -10%;
+    .A,
+    .svg1 {
+        top: 20%;
+        left: 40%;
+
     }
 
-    .svg1 {
-        visibility: hidden;
+    .A {
+        left: -6%;
+    }
+
+    h5 {
+        left: 25%;
+
+    }
+
+    h6 {
+        top: 60%;
+        left: 45%;
+    }
+
+    .nw {
+        left: 45%;
     }
 
     #social {
-        top: 60%;
-        right: 30%;
-
+        left: -20%;
     }
 }
