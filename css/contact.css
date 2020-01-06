@@ -67,9 +67,11 @@ h6 {
     height: 10px;
     color: whitesmoke;
     bottom: 10%;
-    position: fixed;
-    margin-left: 44%;
+    position: absolute;
+    left: 55%;
     display: -ms-flexbox;
+    transform: translate(-50%, -50%);
+
 }
 
 .fa {
@@ -145,6 +147,8 @@ h6 {
     }
 
     #social {
-        left: -20%;
+        position: absolute;
+        left: 75%;
+        right: 30%;
     }
 }
