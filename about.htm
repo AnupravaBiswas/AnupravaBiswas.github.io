@@ -38,9 +38,7 @@
                 $(".image").animate({
                     left: "500px"
                 });
-
             });
-
             $("#close").click(function () {
                 $("#info").animate({
                     top: "280px"
@@ -51,7 +49,6 @@
                 $(".image").animate({
                     left: "0px"
                 });
-
             });
         });
     </script>
@@ -64,7 +61,6 @@
             $(".card-header").click(function () {
                 $(".card-body").slideUp();
                 $(".card").removeClass("activate");
-
                 $(this).next(".card-body").slideDown();
                 $(this).parent(".card").addClass("activate");
             })
